@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.content {
+    background-color: black;
+    padding: 5px;
+}
+
+.inner-content {
+    position: relative;
+}
+
+.header {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    background-color: black;
+    padding: 5px 10px;
+    top: -5px;
+    left: -5px;
+    z-index: 10;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid black;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: -5px;
+    left: 77px;
+    z-index: 10;
+}
+
+.info {
+    background: linear-gradient(white, grey);
+    padding: 40px 10px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+
+svg {
+    margin: 0 auto;
+    display: block;
+}
+
+.svg-text {
+    position: relative;
+}
+
+.blinking {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    animation: blink 5s infinite;
+    font-size: 40px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.list-block {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+ul::before, ul:after {
+    content: ":)))";
+}

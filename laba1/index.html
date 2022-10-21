@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        td {
+            border: 2px solid;
+            background-color: lightgray;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        td:nth-child(even) {
+            text-align: center;
+        }
+        td:nth-child(odd) {
+            text-align: right;
+        }
+        td> ul, td>li {
+            text-align: left;
+        }
+        h1 {
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        h3 {
+            color: green;
+        }
+    </style>
+    <table cellspacing="0">
+        <tr>
+            <td rowspan="3"><img  src="https://jrnlst.ru/sites/default/files/covers/cover_6.jpg" alt="meme"><img src="https://img.rosbalt.ru/photobank/55/55/5e/5b/zDbNRqytYwCQ-580.jpg" alt="meme"></td>
+            <td><h1>Заголовок 1</h1></td>
+            <td><h2>Заголовок 2</h2></td>
+            <td colspan="2"><h3>Заголовок 3</h3></td>
+            <td rowspan="2">
+                <ul style="list-style-type: '-'">
+                    США
+                    <li>Нью-Йорк</li>
+                    <li>Лос-Анджелес</li>
+                </ul>
+                <img  src="https://jrnlst.ru/sites/default/files/covers/cover_6.jpg" alt="meme">    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li style="font-style: italic; text-align: left;">Россия
+                        <ol>
+                            <li><a href="">Москва</a></li>
+                            <li><a href="">Санкт-Петербург</a></li>
+                            <li><a href="">Новосибирск</a></li>
+                        </ol>
+                    </li>
+                    <li style="text-align: left;">США
+                        <ul>
+                            <li>Нью-йорк</li>
+                            <li>Лос-Анджелес</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+            <td colspan="2" style="font-weight: bold; font-size: 5pt; font-stretch: expanded;">Текст 2</td>
+            <td style="text-align: left;">
+                Меню:
+                <ol type="I">
+                    <li><strong>Завтрак</strong>
+                        <ol type="A">
+                            <li><b>Первый стол</b>
+                                <ol class="brackets-list">
+                                    <li>Первое блюдо</li>
+                                    <li>Второе блюдо</li>
+                                </ol>
+                            </li>
+                            <li><b>Второй стол</b>
+                                <ol class="letters-brackets-list">
+                                    <li>Первое блюдо</li>
+                                    <li>Второе блюдо</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><strong>Обед</strong>
+                        <ol type="A">
+                            <li><b>Первый стол</b>
+                                <ol>
+                                    <li>Первое блюдо</li>
+                                    <li>Второе блюдо</li>
+                                    <li>Третье блюдо</li>
+                                </ol>
+                            </li>
+                            <li><b>Второй стол</b>
+                                <ol style="list-style: none;">
+                                    <li>Первое блюдо</li>
+                                    <li>Второе блюдо</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>Текст1</td>
+            <td colspan="2" style="font-size: 10pt; color: #000; font-stretch: condensed;">Текст3</td>
+            <td colspan="2" style="font-family: Impact, Fantasy; color: black;">Текст5</td>
+        </tr>
+    </table>
+</body>
+</html>

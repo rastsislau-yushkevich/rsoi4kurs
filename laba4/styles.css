@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    background-color: darkgrey;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: white;
+}

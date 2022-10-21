@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <form action="" onsubmit="return false">
+        <label>Название устройства<input type="text" name="device-name" id="device-name"></label>
+        <label>Дата поступления<input type="date" name="arrival-date" id="arrival-date"></label>
+        <label>Вид доставки
+            <select name="delivery-type" id="delivery-type">
+                <option value="EXW">EXW</option>
+                <option value="DDP">DDP</option>
+            </select>
+        </label>
+        <label>ID для удаления
+            <select name="id-to-delete" id="id-to-delete">
+                
+            </select>
+        </label>
+        <table id="table">
+
+        </table>
+        <button onclick="submitForm()">Добавить запись</button>
+        <button onclick="this.form.reset()">Очистить форму</button>
+        <button onclick="deleteById()">Удалить по ID</button>
+        <button onclick="showAll()">Показать все записи</button>
+        <button onclick="filter()">Показать по типу доставки</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
