@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" onsubmit="return false">
+    <form action="" id="myForm" onsubmit="return false">
         <label> Имя
             <input type="text" name="name" id="name">
         </label>
@@ -21,15 +21,24 @@
             <input type="text" name="position" id="position">
         </label>
         <fieldset>
-            <label>14px<input type="radio" name="font" value="14px" id=""></label>
+            <label>14px<input type="radio" name="font" value="14px" id="" checked></label>
             <label>16px<input type="radio" name="font" value="16px" id=""></label>
             <label>18px<input type="radio" name="font" value="18px" id=""></label>
         </fieldset>
-        <button onclick="btn1()">btn1</button>
-        <button onclick="btn2()">btn2</button>
-        <button onclick="btn3()">btn3</button>
-        <button onclick="btn4()">btn4</button>
+        <button id="btn1">xml</button>
+        <button id="btn2">getScript</button>
+        <button id="btn3">invisible</button>
+        <button id="btn4">setText</button>
     </form>
+    <div id="device_1">
+
+    </div>
+    <div id="device_2">
+
+    </div>
+    <div id="device_3">
+
+    </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
