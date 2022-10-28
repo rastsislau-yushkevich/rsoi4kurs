@@ -1,0 +1,16 @@
+<h2>Guarantee page</h2>
+
+{{#if compsGuar.length}}
+<ul>
+    {{#each compsGuar}}
+        <li>
+            <p>Producer: {{producer}}</p>
+            <p>Drive Space: {{driveSpace}}</p>
+            <p>Guarantee: {{guarantee}}</p>
+            <p>Amount: {{amount}}</p>
+        </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>no comps</p>
+{{/if}}
